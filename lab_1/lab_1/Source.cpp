@@ -10,7 +10,7 @@ struct Array
 	Array(int* a_, int n_) : a(a_), n(n_), result(0) {}
 };
 
-//DWORD WINAPI worker(LPVOID param)
+//DWORD WINAPI worker(LPVOID param)					//name of function, if we use "another way"
 unsigned __stdcall worker(void* param)
 {
 	double x;
@@ -19,7 +19,7 @@ unsigned __stdcall worker(void* param)
 	std::cin >> x;
 	for (int i = 0; i < ((Array*)param)->n; ++i)
 	{
-		if (((Array*)param)->a[i] == trunc(x))
+		if (((Array*)param)->a[i] == static_cast<int>(trunc(x)))		//compare elements of array with rounded down x value
 		{
 			++result;
 		}
@@ -47,7 +47,7 @@ int main()
 	std::cin >> time;
 
 	auto param = new Array(a, n);
-	//hThread = CreateThread(nullptr, 0, worker, (LPVOID)param, 0, &IDThread);
+	//hThread = CreateThread(nullptr, 0, worker, (LPVOID)param, 0, &IDThread);						//another way to open thread
 	hThread = (HANDLE)_beginthreadex(NULL, 0, &worker, (void*)param, 0, (unsigned int*)&IDThread);
 	if (hThread == NULL)
 		return GetLastError();
@@ -63,5 +63,7 @@ int main()
 		std::cout << "Result: " << param->result << '\n';
 	}
 	CloseHandle(hThread);
+	delete[] a;
+	delete param;
 	return 0;
 }
