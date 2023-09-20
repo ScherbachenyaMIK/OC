@@ -3,7 +3,7 @@
 
 int main()
 {
-	char lpszAppName[] = "..\\x64\\Release\\Parent.exe";
+	char lpszAppName[] = "Parent.exe";
 	STARTUPINFO si;
 	PROCESS_INFORMATION piApp;
 	ZeroMemory(&si, sizeof(STARTUPINFO));

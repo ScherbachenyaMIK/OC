@@ -17,7 +17,7 @@ int main()
 	std::cout << "Enter:\n\"B\" to set blue background\n\"R\" to set red background\n\"G\" to set green background\nelse black background will be set\n";
 	char c;
 	std::cin >> c;
-	char lpszAppName[] = "..\\x64\\Release\\Child.exe";
+	char lpszAppName[] = "Child.exe";
 	char args[1000], element[10];
 	wsprintfA(args, "%d ", n);
 	for (int i = 0; i < n; ++i)
