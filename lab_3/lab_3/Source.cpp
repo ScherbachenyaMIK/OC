@@ -35,6 +35,7 @@ DWORD WINAPI Work(LPVOID lpParam)
 		}
 	}
 	swap(*((std::vector<double>*)lpParam), b);
+	LeaveCriticalSection(&cs2);
 	for (int i = 0; i < n; ++i)
 	{
 		std::cout << ((std::vector<double>*)lpParam)->at(i) << ' ';
@@ -42,17 +43,17 @@ DWORD WINAPI Work(LPVOID lpParam)
 	}
 	std::cout << '\n';
 	LeaveCriticalSection(&cs1);
-	LeaveCriticalSection(&cs2);
 	return 0;
 }
 
 DWORD WINAPI CountElement(LPVOID lpParam) 
 {
-	EnterCriticalSection(&cs2);
 	WaitForSingleObject(hWorkEvent, INFINITE);
+	EnterCriticalSection(&cs2);
 	if (abs(((std::vector<double>*)lpParam)->at(0) - x) > 1e-6)
 	{
 		result = n;
+		LeaveCriticalSection(&cs2);
 		return 0;
 	}
 	int count = 0;
