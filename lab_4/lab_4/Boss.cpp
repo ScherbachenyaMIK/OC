@@ -124,6 +124,7 @@ int main()
 			break;
 		}
 
+		Sleep(50);
 		SetEvent(new_message_prepared);
 		if (open_count < 3)
 		{
