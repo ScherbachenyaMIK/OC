@@ -10,9 +10,9 @@ struct Array
 
 int main()
 {
-	HANDLE hWriteChannelReady = CreateEvent(NULL, TRUE, FALSE, (LPCWSTR)"WRITE_CHANNEL_READY");
+	HANDLE hWriteChannelReady = CreateEvent(NULL, FALSE, FALSE, (LPCWSTR)"WRITE_CHANNEL_READY");
 	HANDLE hReadChannelReady = CreateEvent(NULL, FALSE, FALSE, (LPCWSTR)"READ_CHANNEL_READY");
-	HANDLE hReadChannelHasBeenRead = CreateEvent(NULL, FALSE, FALSE, (LPCWSTR)"READ_CHANNEL_HAS_BEEN_READ");
+	//HANDLE hReadChannelHasBeenRead = CreateEvent(NULL, FALSE, FALSE, (LPCWSTR)"READ_CHANNEL_HAS_BEEN_READ");
 
 	Array arr;
 	std::cout << "Enter array size: ";
@@ -21,6 +21,7 @@ int main()
 	std::cin >> arr.arr;
 
 	HANDLE hWritePipe, hReadPipe;
+	HANDLE hWritePipe2, hReadPipe2;
 	SECURITY_ATTRIBUTES sa;
 	sa.nLength = sizeof(SECURITY_ATTRIBUTES);
 	sa.lpSecurityDescriptor = NULL;
@@ -34,9 +35,17 @@ int main()
 		return GetLastError();
 	}
 
+	if (!CreatePipe(&hReadPipe2, &hWritePipe2, &sa, 0))
+	{
+		_cputs("Create pipe failed.\n");
+		_cputs("Press any key to finish.\n");
+		_getch();
+		return GetLastError();
+	}
+
 	char lpszAppName[] = "Alfavit.exe";
 	char lpszParameter[20];
-	sprintf(lpszParameter, "%d %d", (int)hWritePipe, (int)hReadPipe);
+	sprintf(lpszParameter, "%d %d", (int)hReadPipe, (int)hWritePipe2);
 
 	STARTUPINFO si;
 	PROCESS_INFORMATION piApp;
@@ -66,7 +75,7 @@ int main()
 	WaitForSingleObject(hReadChannelReady, INFINITE);
 
 	Array result;
-	if (!ReadFile(hReadPipe, &(result.n), sizeof(int), (LPDWORD)&dwBytesWritten, NULL))
+	if (!ReadFile(hReadPipe2, &(result.n), sizeof(int), (LPDWORD)&dwBytesWritten, NULL))
 	{
 		_cputs("Read from file failed.\n");
 		_cputs("Press any key to finish.\n");
@@ -74,19 +83,19 @@ int main()
 		return GetLastError();
 	}
 	
-	SetEvent(hReadChannelHasBeenRead);
+	SetEvent(hWriteChannelReady);
 
 	for (int i = 0; i <= result.n; ++i)
 	{
 		WaitForSingleObject(hReadChannelReady, INFINITE);
-		if (!ReadFile(hReadPipe, &(result.arr[i]), sizeof(result.arr[i]), (LPDWORD)&dwBytesWritten, NULL))
+		if (!ReadFile(hReadPipe2, &(result.arr[i]), sizeof(result.arr[i]), (LPDWORD)&dwBytesWritten, NULL))
 		{
 			_cputs("Read from file failed.\n");
 			_cputs("Press any key to finish.\n");
 			_getch();
 			return GetLastError();
 		}
-		SetEvent(hReadChannelHasBeenRead);
+		SetEvent(hWriteChannelReady);
 	}
 
 	std::cout << "Letters:\n";
@@ -102,5 +111,7 @@ int main()
 	CloseHandle(piApp.hProcess);
 	CloseHandle(hWritePipe);
 	CloseHandle(hReadPipe);
+	CloseHandle(hWritePipe2);
+	CloseHandle(hReadPipe2);
 	return 0;
 }

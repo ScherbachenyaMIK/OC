@@ -13,9 +13,9 @@ int main(int argc, char* argv[])
 {
 	HANDLE hReadChannelReady = OpenEvent(EVENT_ALL_ACCESS, FALSE, (LPCWSTR)"WRITE_CHANNEL_READY");
 	HANDLE hWriteChannelReady = OpenEvent(EVENT_ALL_ACCESS, FALSE, (LPCWSTR)"READ_CHANNEL_READY");
-	HANDLE hWriteChannelHasBeenRead = OpenEvent(EVENT_ALL_ACCESS, FALSE, (LPCWSTR)"READ_CHANNEL_HAS_BEEN_READ");
+	//HANDLE hWriteChannelHasBeenRead = OpenEvent(EVENT_ALL_ACCESS, FALSE, (LPCWSTR)"READ_CHANNEL_HAS_BEEN_READ");
 
-	HANDLE hWritePipe = (HANDLE)atoi(argv[0]), hReadPipe = (HANDLE)atoi(argv[1]);
+	HANDLE hWritePipe = (HANDLE)atoi(argv[1]), hReadPipe = (HANDLE)atoi(argv[0]);
 	int dwBytesWritten = 0;
 	Array arr;
 
@@ -56,7 +56,7 @@ int main(int argc, char* argv[])
 
 	for (int i = 0; i <= result.n; ++i)
 	{
-		WaitForSingleObject(hWriteChannelHasBeenRead, INFINITE);
+		WaitForSingleObject(hReadChannelReady, INFINITE);
 		if (!WriteFile(hWritePipe, &(result.arr[i]), sizeof(result.arr[i]), (LPDWORD)&dwBytesWritten, NULL))
 		{
 			_cputs("Write to file failed.\n");
