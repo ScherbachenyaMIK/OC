@@ -7,35 +7,22 @@
 #include "Header.h"
 #include "Variables.h"
 
-//extern CRITICAL_SECTION cs1, cs2;
-//
-//extern HANDLE hWorkEvent;
-//extern HANDLE hCountEnterSectionEvent;
-//extern HANDLE hWorkEnterSectionEvent;
-//extern HANDLE count_element;
-//extern HANDLE work;
-//
-//extern int t;
-//extern double x;
-//extern int result;
-//extern int n;
-
 DWORD WINAPI Work(LPVOID lpParam) 
 {
 	EnterCriticalSection(&cs1);
-	EnterCriticalSection(&cs2);
-	SetEvent(hWorkEnterSectionEvent);
+	EnterCriticalSection(&cs2);				//First we occupy the sections
+	SetEvent(hWorkEnterSectionEvent);		//Then release main
 	WaitForSingleObject(hWorkEvent, INFINITE);
 	int j = 0, k = n - 1;
 	std::vector<double> b(n);
 	for (int i = 0; i < n; ++i)
 	{
-		if (abs(((std::vector<double>*)lpParam)->at(i) - x) < 1e-6)
-		{
+		if (abs(((std::vector<double>*)lpParam)->at(i) - x) < 1e-6)	//copy all elements equals to x at
+		{															//beginning of array
 			b[j] = ((std::vector<double>*)lpParam)->at(i);
 			++j;
 		}
-		else
+		else														//others at the end
 		{
 			b[k] = ((std::vector<double>*)lpParam)->at(i);
 			--k;
@@ -58,15 +45,15 @@ DWORD WINAPI CountElement(LPVOID lpParam)
 	WaitForSingleObject(hWorkEvent, INFINITE);
 	EnterCriticalSection(&cs2);
 	SetEvent(hCountEnterSectionEvent);
-	if (abs(((std::vector<double>*)lpParam)->at(0) - x) > 1e-6)
+	if (abs(((std::vector<double>*)lpParam)->at(0) - x) > 1e-6)		//if first element not equals return 0
 	{
 		result = n;
 		LeaveCriticalSection(&cs2);
 		return 0;
 	}
 	int count = 0;
-	for (int i = 0; i < n; ++i)
-	{
+	for (int i = 0; i < n; ++i)										//while vector[i] equals to x count	 
+	{																//elements
 		if (abs(((std::vector<double>*)lpParam)->at(i) - x) > 1e-6)
 		{
 			break;
@@ -114,9 +101,9 @@ int main()
 	std::cout << "Enter element for searching: ";
 	std::cin >> x;
 
-	WaitForSingleObject(hWorkEnterSectionEvent, INFINITE);
-	SetEvent(hWorkEvent);
-	EnterCriticalSection(&cs1);
+	WaitForSingleObject(hWorkEnterSectionEvent, INFINITE);	//Waiting while 'work' thread enter sections
+	SetEvent(hWorkEvent);									//Starting of processes
+	EnterCriticalSection(&cs1);								//Waiting while thread 'work' finishes
 	for (auto i : a)
 	{
 		std::cout << i << ' ';
@@ -124,8 +111,8 @@ int main()
 	std::cout << '\n';
 	LeaveCriticalSection(&cs1);
 
-	WaitForSingleObject(hCountEnterSectionEvent, INFINITE);
-	EnterCriticalSection(&cs2);
+	WaitForSingleObject(hCountEnterSectionEvent, INFINITE);	//Waiting while 'count' thread enter sections
+	EnterCriticalSection(&cs2);								//Waiting while thread 'count' finishes
 	std::cout << "Count of elements not equals to X: " << result << '\n';
 	LeaveCriticalSection(&cs2);
 	DeleteCriticalSection(&cs2);
