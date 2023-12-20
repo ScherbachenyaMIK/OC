@@ -1,0 +1,3124 @@
+'Deer 1' grazing
+ \\\||||///
+
+'Deer 2' grazing
+ \\|||//
+
+'Deer 3' grazing
+ \\|||///
+
+'Deer 4' grazing
+ \|/
+
+'Deer 5' grazing
+ \\|||///
+
+'Deer 6' grazing
+ \\\||||///
+
+'Deer 7' grazing
+ \|/
+
+'Deer 8' grazing
+ \|/
+
+'Deer 9' grazing
+ \||//
+
+'Elf 1' work progress is:
+ 
+
+'Elf 2' work progress is:
+ 
+
+'Elf 3' work progress is:
+ 
+
+'Elf 4' work progress is:
+ 
+
+'Elf 5' work progress is:
+ 
+
+'Elf 6' work progress is:
+ 
+
+'Elf 7' work progress is:
+ 
+
+'Elf 8' work progress is:
+ 
+
+'Elf 9' work progress is:
+ 
+
+Count of free deers: 0
+Count of free elves: 0
+
+=============================================================================
+
+
+'Deer 1' grazing
+ \\\|||///
+
+'Deer 2' grazing
+ \\||//
+
+'Deer 3' grazing
+ \\|||//
+
+'Deer 4' grazing
+ |/
+
+'Deer 5' grazing
+ \\|||//
+
+'Deer 6' grazing
+ \\\|||///
+
+'Deer 7' grazing
+ |/
+
+'Deer 8' grazing
+ |/
+
+'Deer 9' grazing
+ \||/
+
+'Elf 1' work progress is:
+|
+
+'Elf 2' work progress is:
+|
+
+'Elf 3' work progress is:
+|
+
+'Elf 4' work progress is:
+|
+
+'Elf 5' work progress is:
+|
+
+'Elf 6' work progress is:
+|
+
+'Elf 7' work progress is:
+|
+
+'Elf 8' work progress is:
+|
+
+'Elf 9' work progress is:
+|
+
+Count of free deers: 0
+Count of free elves: 0
+
+=============================================================================
+
+
+'Deer 1' grazing
+ \\|||///
+
+'Deer 2' grazing
+ \||//
+
+'Deer 3' grazing
+ \\||//
+
+'Deer 4' grazing
+ /
+
+'Deer 5' grazing
+ \\||//
+
+'Deer 6' grazing
+ \\|||///
+
+'Deer 7' grazing
+ /
+
+'Deer 8' grazing
+ /
+
+'Deer 9' grazing
+ \|/
+
+'Elf 1' work progress is:
+||
+
+'Elf 2' waiting for santa
+
+'Elf 3' work progress is:
+||
+
+'Elf 4' work progress is:
+||
+
+'Elf 5' work progress is:
+||
+
+'Elf 6' work progress is:
+||
+
+'Elf 7' waiting for santa
+
+'Elf 8' work progress is:
+||
+
+'Elf 9' work progress is:
+||
+
+Count of free deers: 0
+Count of free elves: 2
+
+=============================================================================
+
+
+'Deer 1' grazing
+ \\|||//
+
+'Deer 2' grazing
+ \||/
+
+'Deer 3' grazing
+ \||//
+
+'Deer 4' grazing
+ 
+
+'Deer 5' grazing
+ \||//
+
+'Deer 6' grazing
+ \\|||//
+
+'Deer 7' grazing
+ 
+
+'Deer 8' grazing
+ 
+
+'Deer 9' grazing
+ |/
+
+'Elf 1' work progress is:
+|||
+
+'Elf 2' waiting for santa
+
+'Elf 3' work progress is:
+|||
+
+'Elf 4' work progress is:
+|||
+
+'Elf 5' work progress is:
+|||
+
+'Elf 6' waiting for santa
+
+'Elf 7' waiting for santa
+
+'Elf 8' work progress is:
+|||
+
+'Elf 9' work progress is:
+|||
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 0
+Count of free elves: 3
+
+=============================================================================
+
+
+'Deer 1' grazing
+ \\||//
+
+'Deer 2' grazing
+ \|/
+
+'Deer 3' grazing
+ \||/
+
+'Deer 4' waiting for santa
+
+'Deer 5' grazing
+ \||/
+
+'Deer 6' grazing
+ \\||//
+
+'Deer 7' waiting for santa
+
+'Deer 8' waiting for santa
+
+'Deer 9' grazing
+ /
+
+'Elf 1' work progress is:
+||||
+
+'Elf 2' work progress is:
+|
+
+'Elf 3' work progress is:
+||||
+
+'Elf 4' work progress is:
+||||
+
+'Elf 5' work progress is:
+||||
+
+'Elf 6' waiting for santa
+
+'Elf 7' waiting for santa
+
+'Elf 8' work progress is:
+||||
+
+'Elf 9' work progress is:
+ 
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 3
+Count of free elves: 4
+
+=============================================================================
+
+
+'Deer 1' grazing
+ \||//
+
+'Deer 2' grazing
+ |/
+
+'Deer 3' grazing
+ \|/
+
+'Deer 4' waiting for santa
+
+'Deer 5' grazing
+ \|/
+
+'Deer 6' grazing
+ \||//
+
+'Deer 7' waiting for santa
+
+'Deer 8' waiting for santa
+
+'Deer 9' grazing
+ 
+
+'Elf 1' work progress is:
+|||||
+
+'Elf 2' work progress is:
+||
+
+'Elf 3' work progress is:
+|||||
+
+'Elf 4' work progress is:
+|||||
+
+'Elf 5' work progress is:
+|||||
+
+'Elf 6' work progress is:
+|
+
+'Elf 7' waiting for santa
+
+'Elf 8' waiting for santa
+
+'Elf 9' work progress is:
+|
+
+Santa falls asleep.
+
+Count of free deers: 3
+Count of free elves: 2
+
+=============================================================================
+
+
+'Deer 1' grazing
+ \||/
+
+'Deer 2' grazing
+ /
+
+'Deer 3' grazing
+ |/
+
+'Deer 4' waiting for santa
+
+'Deer 5' grazing
+ |/
+
+'Deer 6' grazing
+ \||/
+
+'Deer 7' waiting for santa
+
+'Deer 8' waiting for santa
+
+'Deer 9' waiting for santa
+
+'Elf 1' waiting for santa
+
+'Elf 2' waiting for santa
+
+'Elf 3' work progress is:
+||||||
+
+'Elf 4' work progress is:
+||||||
+
+'Elf 5' work progress is:
+||||||
+
+'Elf 6' work progress is:
+||
+
+'Elf 7' waiting for santa
+
+'Elf 8' work progress is:
+ 
+
+'Elf 9' work progress is:
+||
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 4
+Count of free elves: 4
+
+=============================================================================
+
+
+'Deer 1' grazing
+ |/
+
+'Deer 2' waiting for santa
+
+'Deer 3' grazing
+ 
+
+'Deer 4' waiting for santa
+
+'Deer 5' grazing
+ 
+
+'Deer 6' grazing
+ |/
+
+'Deer 7' waiting for santa
+
+'Deer 8' waiting for santa
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+ 
+
+'Elf 2' waiting for santa
+
+'Elf 3' work progress is:
+||||||||
+
+'Elf 4' waiting for santa
+
+'Elf 5' work progress is:
+||||||||
+
+'Elf 6' work progress is:
+|||
+
+'Elf 7' work progress is:
+ 
+
+'Elf 8' work progress is:
+|
+
+'Elf 9' work progress is:
+|||
+
+Santa falls asleep.
+
+Count of free deers: 5
+Count of free elves: 2
+
+=============================================================================
+
+
+'Deer 1' grazing
+ /
+
+'Deer 2' waiting for santa
+
+'Deer 3' waiting for santa
+
+'Deer 4' waiting for santa
+
+'Deer 5' waiting for santa
+
+'Deer 6' grazing
+ /
+
+'Deer 7' waiting for santa
+
+'Deer 8' waiting for santa
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+|
+
+'Elf 2' waiting for santa
+
+'Elf 3' work progress is:
+|||||||||
+
+'Elf 4' waiting for santa
+
+'Elf 5' work progress is:
+|||||||||
+
+'Elf 6' work progress is:
+||||
+
+'Elf 7' waiting for santa
+
+'Elf 8' work progress is:
+||
+
+'Elf 9' work progress is:
+||||
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 7
+Count of free elves: 3
+
+=============================================================================
+
+
+'Deer 1' grazing
+ 
+
+'Deer 2' waiting for santa
+
+'Deer 3' waiting for santa
+
+'Deer 4' waiting for santa
+
+'Deer 5' waiting for santa
+
+'Deer 6' grazing
+ 
+
+'Deer 7' waiting for santa
+
+'Deer 8' waiting for santa
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+||
+
+'Elf 2' work progress is:
+ 
+
+'Elf 3' waiting for santa
+
+'Elf 4' waiting for santa
+
+'Elf 5' waiting for santa
+
+'Elf 6' work progress is:
+|||||
+
+'Elf 7' waiting for santa
+
+'Elf 8' work progress is:
+|||
+
+'Elf 9' waiting for santa
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 7
+Count of free elves: 6
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' waiting for santa
+
+'Deer 3' waiting for santa
+
+'Deer 4' waiting for santa
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' waiting for santa
+
+'Deer 8' waiting for santa
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+|||
+
+'Elf 2' work progress is:
+|
+
+'Elf 3' waiting for santa
+
+'Elf 4' work progress is:
+|
+
+'Elf 5' waiting for santa
+
+'Elf 6' work progress is:
+||||||
+
+'Elf 7' work progress is:
+ 
+
+'Elf 8' work progress is:
+||||
+
+'Elf 9' waiting for santa
+
+Santa is waking up! Time to deliver presents.
+
+Count of free deers: 9
+Count of free elves: 3
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' waiting for santa
+
+'Deer 3' waiting for santa
+
+'Deer 4' waiting for santa
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' waiting for santa
+
+'Deer 8' waiting for santa
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+||||
+
+'Elf 2' work progress is:
+||
+
+'Elf 3' waiting for santa
+
+'Elf 4' work progress is:
+||
+
+'Elf 5' waiting for santa
+
+'Elf 6' work progress is:
+|||||||
+
+'Elf 7' work progress is:
+|
+
+'Elf 8' work progress is:
+||||||
+
+'Elf 9' waiting for santa
+
+Santa is waking up! Time to deliver presents.
+
+Count of free deers: 9
+Count of free elves: 3
+
+=============================================================================
+
+
+'Deer 1' grazing
+ /
+
+'Deer 2' grazing
+ \\\|||///
+
+'Deer 3' grazing
+ \\\|||///
+
+'Deer 4' grazing
+ /
+
+'Deer 5' grazing
+ \\||//
+
+'Deer 6' grazing
+ \||//
+
+'Deer 7' grazing
+ \\||//
+
+'Deer 8' grazing
+ \\\||||////
+
+'Deer 9' grazing
+ /
+
+'Elf 1' work progress is:
+|||||
+
+'Elf 2' work progress is:
+|||
+
+'Elf 3' waiting for santa
+
+'Elf 4' work progress is:
+|||
+
+'Elf 5' waiting for santa
+
+'Elf 6' work progress is:
+||||||||
+
+'Elf 7' work progress is:
+||
+
+'Elf 8' work progress is:
+|||||||
+
+'Elf 9' work progress is:
+ 
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 0
+Count of free elves: 3
+
+=============================================================================
+
+
+'Deer 1' grazing
+ 
+
+'Deer 2' grazing
+ \\|||///
+
+'Deer 3' grazing
+ \\|||///
+
+'Deer 4' grazing
+ 
+
+'Deer 5' grazing
+ \||//
+
+'Deer 6' grazing
+ \||/
+
+'Deer 7' grazing
+ \||//
+
+'Deer 8' grazing
+ \\\||||///
+
+'Deer 9' grazing
+ 
+
+'Elf 1' work progress is:
+ 
+
+'Elf 2' work progress is:
+|||||
+
+'Elf 3' waiting for santa
+
+'Elf 4' work progress is:
+ 
+
+'Elf 5' waiting for santa
+
+'Elf 6' waiting for santa
+
+'Elf 7' work progress is:
+|||
+
+'Elf 8' work progress is:
+||||||||
+
+'Elf 9' work progress is:
+|
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 0
+Count of free elves: 3
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' grazing
+ \\||//
+
+'Deer 3' grazing
+ \\||//
+
+'Deer 4' waiting for santa
+
+'Deer 5' grazing
+ \|/
+
+'Deer 6' grazing
+ |/
+
+'Deer 7' grazing
+ \|/
+
+'Deer 8' grazing
+ \\|||///
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+|
+
+'Elf 2' work progress is:
+||||||
+
+'Elf 3' waiting for santa
+
+'Elf 4' work progress is:
+|
+
+'Elf 5' waiting for santa
+
+'Elf 6' work progress is:
+ 
+
+'Elf 7' waiting for santa
+
+'Elf 8' work progress is:
+|||||||||
+
+'Elf 9' work progress is:
+||
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 3
+Count of free elves: 4
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' grazing
+ \||//
+
+'Deer 3' grazing
+ \||//
+
+'Deer 4' waiting for santa
+
+'Deer 5' grazing
+ |/
+
+'Deer 6' grazing
+ /
+
+'Deer 7' grazing
+ |/
+
+'Deer 8' grazing
+ \\|||//
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+||
+
+'Elf 2' waiting for santa
+
+'Elf 3' waiting for santa
+
+'Elf 4' work progress is:
+||
+
+'Elf 5' work progress is:
+|
+
+'Elf 6' work progress is:
+|
+
+'Elf 7' work progress is:
+ 
+
+'Elf 8' waiting for santa
+
+'Elf 9' work progress is:
+|||
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 3
+Count of free elves: 3
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' grazing
+ \||/
+
+'Deer 3' grazing
+ \||/
+
+'Deer 4' waiting for santa
+
+'Deer 5' grazing
+ /
+
+'Deer 6' grazing
+ 
+
+'Deer 7' grazing
+ /
+
+'Deer 8' grazing
+ \\||//
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+||||
+
+'Elf 2' work progress is:
+ 
+
+'Elf 3' waiting for santa
+
+'Elf 4' work progress is:
+|||
+
+'Elf 5' work progress is:
+||
+
+'Elf 6' work progress is:
+||
+
+'Elf 7' work progress is:
+|
+
+'Elf 8' work progress is:
+ 
+
+'Elf 9' work progress is:
+||||
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 3
+Count of free elves: 3
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' grazing
+ \|/
+
+'Deer 3' grazing
+ \|/
+
+'Deer 4' waiting for santa
+
+'Deer 5' grazing
+ 
+
+'Deer 6' waiting for santa
+
+'Deer 7' grazing
+ 
+
+'Deer 8' grazing
+ \||//
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+|||||
+
+'Elf 2' work progress is:
+|
+
+'Elf 3' work progress is:
+ 
+
+'Elf 4' work progress is:
+||||
+
+'Elf 5' work progress is:
+|||
+
+'Elf 6' work progress is:
+|||
+
+'Elf 7' work progress is:
+||
+
+'Elf 8' work progress is:
+|
+
+'Elf 9' work progress is:
+|||||
+
+Santa falls asleep.
+
+Count of free deers: 4
+Count of free elves: 0
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' grazing
+ |/
+
+'Deer 3' grazing
+ |/
+
+'Deer 4' waiting for santa
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' waiting for santa
+
+'Deer 8' grazing
+ \||/
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+||||||
+
+'Elf 2' work progress is:
+||
+
+'Elf 3' work progress is:
+|
+
+'Elf 4' work progress is:
+|||||
+
+'Elf 5' work progress is:
+||||
+
+'Elf 6' work progress is:
+|||||
+
+'Elf 7' work progress is:
+|||
+
+'Elf 8' work progress is:
+|||
+
+'Elf 9' work progress is:
+||||||
+
+Count of free deers: 6
+Count of free elves: 0
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' grazing
+ /
+
+'Deer 3' grazing
+ /
+
+'Deer 4' waiting for santa
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' waiting for santa
+
+'Deer 8' grazing
+ \|/
+
+'Deer 9' waiting for santa
+
+'Elf 1' waiting for santa
+
+'Elf 2' waiting for santa
+
+'Elf 3' work progress is:
+||
+
+'Elf 4' work progress is:
+||||||
+
+'Elf 5' work progress is:
+|||||
+
+'Elf 6' work progress is:
+||||||
+
+'Elf 7' work progress is:
+||||
+
+'Elf 8' work progress is:
+||||
+
+'Elf 9' work progress is:
+|||||||
+
+Count of free deers: 6
+Count of free elves: 2
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' grazing
+ 
+
+'Deer 3' grazing
+ 
+
+'Deer 4' waiting for santa
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' waiting for santa
+
+'Deer 8' grazing
+ |/
+
+'Deer 9' waiting for santa
+
+'Elf 1' waiting for santa
+
+'Elf 2' waiting for santa
+
+'Elf 3' work progress is:
+||||
+
+'Elf 4' work progress is:
+|||||||
+
+'Elf 5' work progress is:
+||||||
+
+'Elf 6' waiting for santa
+
+'Elf 7' work progress is:
+||||||
+
+'Elf 8' work progress is:
+|||||
+
+'Elf 9' waiting for santa
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 6
+Count of free elves: 4
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' waiting for santa
+
+'Deer 3' waiting for santa
+
+'Deer 4' waiting for santa
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' waiting for santa
+
+'Deer 8' grazing
+ /
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+ 
+
+'Elf 2' work progress is:
+ 
+
+'Elf 3' work progress is:
+|||||
+
+'Elf 4' work progress is:
+||||||||
+
+'Elf 5' work progress is:
+|||||||
+
+'Elf 6' waiting for santa
+
+'Elf 7' waiting for santa
+
+'Elf 8' work progress is:
+||||||
+
+'Elf 9' waiting for santa
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 8
+Count of free elves: 5
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' waiting for santa
+
+'Deer 3' waiting for santa
+
+'Deer 4' waiting for santa
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' waiting for santa
+
+'Deer 8' waiting for santa
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+|
+
+'Elf 2' work progress is:
+|
+
+'Elf 3' work progress is:
+||||||
+
+'Elf 4' waiting for santa
+
+'Elf 5' work progress is:
+ 
+
+'Elf 6' waiting for santa
+
+'Elf 7' work progress is:
+ 
+
+'Elf 8' work progress is:
+|||||||
+
+'Elf 9' waiting for santa
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 9
+Count of free elves: 4
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' waiting for santa
+
+'Deer 3' waiting for santa
+
+'Deer 4' waiting for santa
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' waiting for santa
+
+'Deer 8' waiting for santa
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+||
+
+'Elf 2' work progress is:
+|||
+
+'Elf 3' work progress is:
+|||||||
+
+'Elf 4' work progress is:
+ 
+
+'Elf 5' work progress is:
+|
+
+'Elf 6' waiting for santa
+
+'Elf 7' work progress is:
+|
+
+'Elf 8' work progress is:
+||||||||
+
+'Elf 9' work progress is:
+ 
+
+Santa is waking up! Time to deliver presents.
+
+Count of free deers: 9
+Count of free elves: 1
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' waiting for santa
+
+'Deer 3' waiting for santa
+
+'Deer 4' waiting for santa
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' waiting for santa
+
+'Deer 8' waiting for santa
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+|||
+
+'Elf 2' work progress is:
+||||
+
+'Elf 3' work progress is:
+||||||||
+
+'Elf 4' work progress is:
+|
+
+'Elf 5' work progress is:
+||
+
+'Elf 6' waiting for santa
+
+'Elf 7' work progress is:
+||
+
+'Elf 8' work progress is:
+|||||||||
+
+'Elf 9' work progress is:
+|
+
+Santa is waking up! Time to deliver presents.
+
+Count of free deers: 9
+Count of free elves: 1
+
+=============================================================================
+
+
+'Deer 1' grazing
+ \\\||||////
+
+'Deer 2' grazing
+ \\\|||///
+
+'Deer 3' grazing
+ \\\|||///
+
+'Deer 4' grazing
+ \\|||//
+
+'Deer 5' grazing
+ /
+
+'Deer 6' grazing
+ \\|||//
+
+'Deer 7' grazing
+ \\\||||///
+
+'Deer 8' grazing
+ \|/
+
+'Deer 9' grazing
+ \\||//
+
+'Elf 1' waiting for santa
+
+'Elf 2' work progress is:
+|||||
+
+'Elf 3' work progress is:
+|||||||||
+
+'Elf 4' waiting for santa
+
+'Elf 5' work progress is:
+|||
+
+'Elf 6' waiting for santa
+
+'Elf 7' work progress is:
+||||
+
+'Elf 8' waiting for santa
+
+'Elf 9' work progress is:
+||
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 0
+Count of free elves: 4
+
+=============================================================================
+
+
+'Deer 1' grazing
+ \\\||||///
+
+'Deer 2' grazing
+ \\|||///
+
+'Deer 3' grazing
+ \\|||///
+
+'Deer 4' grazing
+ \\||//
+
+'Deer 5' grazing
+ 
+
+'Deer 6' grazing
+ \\||//
+
+'Deer 7' grazing
+ \\\|||///
+
+'Deer 8' grazing
+ |/
+
+'Deer 9' grazing
+ \||//
+
+'Elf 1' waiting for santa
+
+'Elf 2' work progress is:
+||||||
+
+'Elf 3' work progress is:
+||||||||||
+
+'Elf 4' work progress is:
+ 
+
+'Elf 5' work progress is:
+||||
+
+'Elf 6' work progress is:
+ 
+
+'Elf 7' work progress is:
+|||||
+
+'Elf 8' waiting for santa
+
+'Elf 9' work progress is:
+|||
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 0
+Count of free elves: 4
+
+=============================================================================
+
+
+'Deer 1' grazing
+ \\\|||///
+
+'Deer 2' grazing
+ \\|||//
+
+'Deer 3' grazing
+ \\|||//
+
+'Deer 4' grazing
+ \||//
+
+'Deer 5' waiting for santa
+
+'Deer 6' grazing
+ \||//
+
+'Deer 7' grazing
+ \\|||///
+
+'Deer 8' grazing
+ /
+
+'Deer 9' grazing
+ \||/
+
+'Elf 1' work progress is:
+ 
+
+'Elf 2' waiting for santa
+
+'Elf 3' waiting for santa
+
+'Elf 4' work progress is:
+|
+
+'Elf 5' work progress is:
+|||||
+
+'Elf 6' work progress is:
+|
+
+'Elf 7' work progress is:
+||||||
+
+'Elf 8' waiting for santa
+
+'Elf 9' work progress is:
+||||
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 1
+Count of free elves: 3
+
+=============================================================================
+
+
+'Deer 1' grazing
+ \\|||///
+
+'Deer 2' grazing
+ \\||//
+
+'Deer 3' grazing
+ \\||//
+
+'Deer 4' grazing
+ \||/
+
+'Deer 5' waiting for santa
+
+'Deer 6' grazing
+ \||/
+
+'Deer 7' grazing
+ \\|||//
+
+'Deer 8' grazing
+ 
+
+'Deer 9' grazing
+ \|/
+
+'Elf 1' work progress is:
+|
+
+'Elf 2' waiting for santa
+
+'Elf 3' work progress is:
+ 
+
+'Elf 4' work progress is:
+|||
+
+'Elf 5' work progress is:
+||||||
+
+'Elf 6' work progress is:
+||
+
+'Elf 7' work progress is:
+|||||||
+
+'Elf 8' work progress is:
+|
+
+'Elf 9' work progress is:
+|||||
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 1
+Count of free elves: 3
+
+=============================================================================
+
+
+'Deer 1' grazing
+ \\|||//
+
+'Deer 2' grazing
+ \||//
+
+'Deer 3' grazing
+ \||//
+
+'Deer 4' grazing
+ \|/
+
+'Deer 5' waiting for santa
+
+'Deer 6' grazing
+ \|/
+
+'Deer 7' grazing
+ \\||//
+
+'Deer 8' waiting for santa
+
+'Deer 9' grazing
+ |/
+
+'Elf 1' work progress is:
+|||
+
+'Elf 2' work progress is:
+|
+
+'Elf 3' work progress is:
+|
+
+'Elf 4' work progress is:
+||||
+
+'Elf 5' work progress is:
+||||||||
+
+'Elf 6' work progress is:
+|||
+
+'Elf 7' work progress is:
+||||||||
+
+'Elf 8' work progress is:
+||
+
+'Elf 9' work progress is:
+||||||
+
+Santa falls asleep.
+
+Count of free deers: 2
+Count of free elves: 0
+
+=============================================================================
+
+
+'Deer 1' grazing
+ \||//
+
+'Deer 2' grazing
+ \|/
+
+'Deer 3' grazing
+ \|/
+
+'Deer 4' grazing
+ /
+
+'Deer 5' waiting for santa
+
+'Deer 6' grazing
+ /
+
+'Deer 7' grazing
+ \||/
+
+'Deer 8' waiting for santa
+
+'Deer 9' grazing
+ 
+
+'Elf 1' work progress is:
+||||
+
+'Elf 2' work progress is:
+||
+
+'Elf 3' work progress is:
+||
+
+'Elf 4' work progress is:
+|||||
+
+'Elf 5' work progress is:
+|||||||||
+
+'Elf 6' work progress is:
+||||
+
+'Elf 7' work progress is:
+|||||||||
+
+'Elf 8' work progress is:
+|||
+
+'Elf 9' work progress is:
+||||||||
+
+Count of free deers: 2
+Count of free elves: 0
+
+=============================================================================
+
+
+'Deer 1' grazing
+ |/
+
+'Deer 2' grazing
+ 
+
+'Deer 3' grazing
+ 
+
+'Deer 4' waiting for santa
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' grazing
+ /
+
+'Deer 8' waiting for santa
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+|||||||
+
+'Elf 2' work progress is:
+|||||
+
+'Elf 3' waiting for santa
+
+'Elf 4' waiting for santa
+
+'Elf 5' work progress is:
+ 
+
+'Elf 6' work progress is:
+|||||||
+
+'Elf 7' work progress is:
+|
+
+'Elf 8' waiting for santa
+
+'Elf 9' work progress is:
+ 
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 5
+Count of free elves: 3
+
+=============================================================================
+
+
+'Deer 1' grazing
+ /
+
+'Deer 2' waiting for santa
+
+'Deer 3' waiting for santa
+
+'Deer 4' waiting for santa
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' grazing
+ 
+
+'Deer 8' waiting for santa
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+ 
+
+'Elf 2' work progress is:
+||||||
+
+'Elf 3' work progress is:
+ 
+
+'Elf 4' waiting for santa
+
+'Elf 5' work progress is:
+||
+
+'Elf 6' work progress is:
+|||||||||
+
+'Elf 7' work progress is:
+||
+
+'Elf 8' waiting for santa
+
+'Elf 9' work progress is:
+|
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 7
+Count of free elves: 4
+
+=============================================================================
+
+
+'Deer 1' grazing
+ 
+
+'Deer 2' waiting for santa
+
+'Deer 3' waiting for santa
+
+'Deer 4' waiting for santa
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' waiting for santa
+
+'Deer 8' waiting for santa
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+|
+
+'Elf 2' work progress is:
+|||||||
+
+'Elf 3' work progress is:
+|
+
+'Elf 4' work progress is:
+ 
+
+'Elf 5' waiting for santa
+
+'Elf 6' work progress is:
+||||||||||
+
+'Elf 7' work progress is:
+|||
+
+'Elf 8' waiting for santa
+
+'Elf 9' work progress is:
+||
+
+Santa falls asleep.
+
+Count of free deers: 8
+Count of free elves: 2
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' waiting for santa
+
+'Deer 3' waiting for santa
+
+'Deer 4' waiting for santa
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' waiting for santa
+
+'Deer 8' waiting for santa
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+||
+
+'Elf 2' work progress is:
+||||||||
+
+'Elf 3' waiting for santa
+
+'Elf 4' work progress is:
+|
+
+'Elf 5' waiting for santa
+
+'Elf 6' work progress is:
+|||||||||||
+
+'Elf 7' work progress is:
+||||
+
+'Elf 8' work progress is:
+ 
+
+'Elf 9' waiting for santa
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 9
+Count of free elves: 4
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' waiting for santa
+
+'Deer 3' waiting for santa
+
+'Deer 4' waiting for santa
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' waiting for santa
+
+'Deer 8' waiting for santa
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+|||
+
+'Elf 2' work progress is:
+|||||||||
+
+'Elf 3' waiting for santa
+
+'Elf 4' work progress is:
+||
+
+'Elf 5' waiting for santa
+
+'Elf 6' waiting for santa
+
+'Elf 7' work progress is:
+||||||
+
+'Elf 8' work progress is:
+|
+
+'Elf 9' work progress is:
+ 
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 9
+Count of free elves: 5
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' waiting for santa
+
+'Deer 3' waiting for santa
+
+'Deer 4' waiting for santa
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' waiting for santa
+
+'Deer 8' waiting for santa
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+||||
+
+'Elf 2' work progress is:
+||||||||||
+
+'Elf 3' work progress is:
+|
+
+'Elf 4' work progress is:
+||||
+
+'Elf 5' waiting for santa
+
+'Elf 6' waiting for santa
+
+'Elf 7' work progress is:
+|||||||
+
+'Elf 8' work progress is:
+||
+
+'Elf 9' work progress is:
+|
+
+Santa is waking up! Time to deliver presents.
+
+Count of free deers: 9
+Count of free elves: 2
+
+=============================================================================
+
+
+'Deer 1' grazing
+ /
+
+'Deer 2' grazing
+ \||//
+
+'Deer 3' grazing
+ \\|||///
+
+'Deer 4' grazing
+ \\||//
+
+'Deer 5' grazing
+ |/
+
+'Deer 6' grazing
+ /
+
+'Deer 7' grazing
+ \\\||||////
+
+'Deer 8' grazing
+ /
+
+'Deer 9' grazing
+ \\||//
+
+'Elf 1' work progress is:
+|||||
+
+'Elf 2' waiting for santa
+
+'Elf 3' work progress is:
+||
+
+'Elf 4' work progress is:
+|||||
+
+'Elf 5' waiting for santa
+
+'Elf 6' waiting for santa
+
+'Elf 7' work progress is:
+||||||||
+
+'Elf 8' work progress is:
+|||
+
+'Elf 9' work progress is:
+||
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 0
+Count of free elves: 3
+
+=============================================================================
+
+
+'Deer 1' grazing
+ 
+
+'Deer 2' grazing
+ \||/
+
+'Deer 3' grazing
+ \\|||//
+
+'Deer 4' grazing
+ \||//
+
+'Deer 5' grazing
+ /
+
+'Deer 6' grazing
+ 
+
+'Deer 7' grazing
+ \\\||||///
+
+'Deer 8' grazing
+ 
+
+'Deer 9' grazing
+ \||//
+
+'Elf 1' work progress is:
+||||||
+
+'Elf 2' waiting for santa
+
+'Elf 3' work progress is:
+|||
+
+'Elf 4' work progress is:
+||||||
+
+'Elf 5' work progress is:
+ 
+
+'Elf 6' waiting for santa
+
+'Elf 7' work progress is:
+|||||||||
+
+'Elf 8' work progress is:
+||||
+
+'Elf 9' work progress is:
+|||
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 0
+Count of free elves: 3
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' grazing
+ \|/
+
+'Deer 3' grazing
+ \\||//
+
+'Deer 4' grazing
+ \||/
+
+'Deer 5' grazing
+ 
+
+'Deer 6' waiting for santa
+
+'Deer 7' grazing
+ \\\|||///
+
+'Deer 8' waiting for santa
+
+'Deer 9' grazing
+ \||/
+
+'Elf 1' work progress is:
+||||||||
+
+'Elf 2' work progress is:
+ 
+
+'Elf 3' work progress is:
+||||
+
+'Elf 4' work progress is:
+|||||||
+
+'Elf 5' work progress is:
+|
+
+'Elf 6' work progress is:
+|
+
+'Elf 7' waiting for santa
+
+'Elf 8' work progress is:
+|||||
+
+'Elf 9' waiting for santa
+
+Santa falls asleep.
+
+Count of free deers: 3
+Count of free elves: 2
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' grazing
+ |/
+
+'Deer 3' grazing
+ \||//
+
+'Deer 4' grazing
+ \|/
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' grazing
+ \\|||///
+
+'Deer 8' waiting for santa
+
+'Deer 9' grazing
+ \|/
+
+'Elf 1' work progress is:
+|||||||||
+
+'Elf 2' work progress is:
+|
+
+'Elf 3' work progress is:
+|||||
+
+'Elf 4' work progress is:
+||||||||
+
+'Elf 5' work progress is:
+||
+
+'Elf 6' work progress is:
+||
+
+'Elf 7' waiting for santa
+
+'Elf 8' work progress is:
+||||||
+
+'Elf 9' waiting for santa
+
+Count of free deers: 4
+Count of free elves: 2
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' grazing
+ /
+
+'Deer 3' grazing
+ \||/
+
+'Deer 4' grazing
+ |/
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' grazing
+ \\|||//
+
+'Deer 8' waiting for santa
+
+'Deer 9' grazing
+ |/
+
+'Elf 1' work progress is:
+||||||||||
+
+'Elf 2' work progress is:
+||
+
+'Elf 3' work progress is:
+||||||
+
+'Elf 4' work progress is:
+|||||||||
+
+'Elf 5' work progress is:
+|||
+
+'Elf 6' work progress is:
+|||
+
+'Elf 7' waiting for santa
+
+'Elf 8' work progress is:
+|||||||
+
+'Elf 9' waiting for santa
+
+Count of free deers: 4
+Count of free elves: 2
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' grazing
+ 
+
+'Deer 3' grazing
+ \|/
+
+'Deer 4' grazing
+ /
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' grazing
+ \\||//
+
+'Deer 8' waiting for santa
+
+'Deer 9' grazing
+ /
+
+'Elf 1' work progress is:
+|||||||||||
+
+'Elf 2' work progress is:
+|||
+
+'Elf 3' work progress is:
+|||||||
+
+'Elf 4' work progress is:
+||||||||||
+
+'Elf 5' work progress is:
+||||
+
+'Elf 6' waiting for santa
+
+'Elf 7' waiting for santa
+
+'Elf 8' work progress is:
+||||||||
+
+'Elf 9' waiting for santa
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 4
+Count of free elves: 3
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' waiting for santa
+
+'Deer 3' grazing
+ |/
+
+'Deer 4' grazing
+ 
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' grazing
+ \||//
+
+'Deer 8' waiting for santa
+
+'Deer 9' grazing
+ 
+
+'Elf 1' waiting for santa
+
+'Elf 2' work progress is:
+||||
+
+'Elf 3' work progress is:
+||||||||
+
+'Elf 4' work progress is:
+|||||||||||
+
+'Elf 5' work progress is:
+ 
+
+'Elf 6' waiting for santa
+
+'Elf 7' waiting for santa
+
+'Elf 8' work progress is:
+||||||||||
+
+'Elf 9' work progress is:
+ 
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 5
+Count of free elves: 5
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' waiting for santa
+
+'Deer 3' grazing
+ 
+
+'Deer 4' waiting for santa
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' grazing
+ \|/
+
+'Deer 8' waiting for santa
+
+'Deer 9' waiting for santa
+
+'Elf 1' waiting for santa
+
+'Elf 2' work progress is:
+|||||
+
+'Elf 3' waiting for santa
+
+'Elf 4' waiting for santa
+
+'Elf 5' work progress is:
+|
+
+'Elf 6' work progress is:
+ 
+
+'Elf 7' work progress is:
+ 
+
+'Elf 8' waiting for santa
+
+'Elf 9' work progress is:
+|
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 7
+Count of free elves: 5
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' waiting for santa
+
+'Deer 3' waiting for santa
+
+'Deer 4' waiting for santa
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' grazing
+ |/
+
+'Deer 8' waiting for santa
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+ 
+
+'Elf 2' work progress is:
+|||||||
+
+'Elf 3' waiting for santa
+
+'Elf 4' waiting for santa
+
+'Elf 5' work progress is:
+||
+
+'Elf 6' work progress is:
+|
+
+'Elf 7' work progress is:
+|
+
+'Elf 8' waiting for santa
+
+'Elf 9' work progress is:
+|||
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 8
+Count of free elves: 5
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' waiting for santa
+
+'Deer 3' waiting for santa
+
+'Deer 4' waiting for santa
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' grazing
+ /
+
+'Deer 8' waiting for santa
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+|
+
+'Elf 2' work progress is:
+||||||||
+
+'Elf 3' work progress is:
+|
+
+'Elf 4' waiting for santa
+
+'Elf 5' work progress is:
+|||
+
+'Elf 6' work progress is:
+||
+
+'Elf 7' work progress is:
+||
+
+'Elf 8' waiting for santa
+
+'Elf 9' work progress is:
+||||
+
+Santa falls asleep.
+
+Count of free deers: 8
+Count of free elves: 2
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' waiting for santa
+
+'Deer 3' waiting for santa
+
+'Deer 4' waiting for santa
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' grazing
+ 
+
+'Deer 8' waiting for santa
+
+'Deer 9' waiting for santa
+
+'Elf 1' waiting for santa
+
+'Elf 2' work progress is:
+|||||||||
+
+'Elf 3' work progress is:
+||
+
+'Elf 4' work progress is:
+ 
+
+'Elf 5' waiting for santa
+
+'Elf 6' work progress is:
+|||
+
+'Elf 7' waiting for santa
+
+'Elf 8' waiting for santa
+
+'Elf 9' work progress is:
+|||||
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 8
+Count of free elves: 5
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' waiting for santa
+
+'Deer 3' waiting for santa
+
+'Deer 4' waiting for santa
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' waiting for santa
+
+'Deer 8' waiting for santa
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+ 
+
+'Elf 2' waiting for santa
+
+'Elf 3' work progress is:
+|||
+
+'Elf 4' work progress is:
+|
+
+'Elf 5' waiting for santa
+
+'Elf 6' work progress is:
+||||
+
+'Elf 7' waiting for santa
+
+'Elf 8' work progress is:
+ 
+
+'Elf 9' work progress is:
+||||||
+
+Santa is waking up! Time to deliver presents.
+
+Count of free deers: 9
+Count of free elves: 3
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' waiting for santa
+
+'Deer 3' waiting for santa
+
+'Deer 4' waiting for santa
+
+'Deer 5' waiting for santa
+
+'Deer 6' waiting for santa
+
+'Deer 7' waiting for santa
+
+'Deer 8' waiting for santa
+
+'Deer 9' waiting for santa
+
+'Elf 1' work progress is:
+|
+
+'Elf 2' waiting for santa
+
+'Elf 3' work progress is:
+||||
+
+'Elf 4' waiting for santa
+
+'Elf 5' waiting for santa
+
+'Elf 6' work progress is:
+|||||
+
+'Elf 7' waiting for santa
+
+'Elf 8' work progress is:
+|
+
+'Elf 9' work progress is:
+|||||||
+
+Santa is waking up! Time to deliver presents.
+
+Count of free deers: 9
+Count of free elves: 4
+
+=============================================================================
+
+
+'Deer 1' grazing
+ \||//
+
+'Deer 2' grazing
+ \|/
+
+'Deer 3' grazing
+ \\\|||///
+
+'Deer 4' grazing
+ \\||//
+
+'Deer 5' grazing
+ \\|||///
+
+'Deer 6' grazing
+ |/
+
+'Deer 7' grazing
+ |/
+
+'Deer 8' grazing
+ /
+
+'Deer 9' grazing
+ \\\|||///
+
+'Elf 1' waiting for santa
+
+'Elf 2' waiting for santa
+
+'Elf 3' work progress is:
+|||||
+
+'Elf 4' waiting for santa
+
+'Elf 5' waiting for santa
+
+'Elf 6' work progress is:
+||||||
+
+'Elf 7' waiting for santa
+
+'Elf 8' work progress is:
+||
+
+'Elf 9' work progress is:
+||||||||
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 0
+Count of free elves: 5
+
+=============================================================================
+
+
+'Deer 1' grazing
+ \||/
+
+'Deer 2' grazing
+ |/
+
+'Deer 3' grazing
+ \\|||///
+
+'Deer 4' grazing
+ \||//
+
+'Deer 5' grazing
+ \\|||//
+
+'Deer 6' grazing
+ /
+
+'Deer 7' grazing
+ /
+
+'Deer 8' grazing
+ 
+
+'Deer 9' grazing
+ \\|||///
+
+'Elf 1' waiting for santa
+
+'Elf 2' waiting for santa
+
+'Elf 3' work progress is:
+||||||
+
+'Elf 4' waiting for santa
+
+'Elf 5' work progress is:
+ 
+
+'Elf 6' work progress is:
+|||||||
+
+'Elf 7' work progress is:
+ 
+
+'Elf 8' work progress is:
+||||
+
+'Elf 9' work progress is:
+|||||||||
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 0
+Count of free elves: 5
+
+=============================================================================
+
+
+'Deer 1' grazing
+ \|/
+
+'Deer 2' grazing
+ /
+
+'Deer 3' grazing
+ \\|||//
+
+'Deer 4' grazing
+ \||/
+
+'Deer 5' grazing
+ \\||//
+
+'Deer 6' grazing
+ 
+
+'Deer 7' grazing
+ 
+
+'Deer 8' waiting for santa
+
+'Deer 9' grazing
+ \\|||//
+
+'Elf 1' waiting for santa
+
+'Elf 2' work progress is:
+ 
+
+'Elf 3' work progress is:
+ 
+
+'Elf 4' waiting for santa
+
+'Elf 5' work progress is:
+||
+
+'Elf 6' waiting for santa
+
+'Elf 7' work progress is:
+|
+
+'Elf 8' work progress is:
+|||||
+
+'Elf 9' waiting for santa
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 1
+Count of free elves: 5
+
+=============================================================================
+
+
+'Deer 1' grazing
+ |/
+
+'Deer 2' grazing
+ 
+
+'Deer 3' grazing
+ \\||//
+
+'Deer 4' grazing
+ \|/
+
+'Deer 5' grazing
+ \||//
+
+'Deer 6' waiting for santa
+
+'Deer 7' waiting for santa
+
+'Deer 8' waiting for santa
+
+'Deer 9' grazing
+ \\||//
+
+'Elf 1' work progress is:
+ 
+
+'Elf 2' work progress is:
+|
+
+'Elf 3' work progress is:
+|
+
+'Elf 4' work progress is:
+ 
+
+'Elf 5' work progress is:
+|||
+
+'Elf 6' waiting for santa
+
+'Elf 7' work progress is:
+||
+
+'Elf 8' work progress is:
+||||||
+
+'Elf 9' waiting for santa
+
+Santa falls asleep.
+
+Count of free deers: 3
+Count of free elves: 2
+
+=============================================================================
+
+
+'Deer 1' grazing
+ /
+
+'Deer 2' waiting for santa
+
+'Deer 3' grazing
+ \||//
+
+'Deer 4' grazing
+ |/
+
+'Deer 5' grazing
+ \||/
+
+'Deer 6' waiting for santa
+
+'Deer 7' waiting for santa
+
+'Deer 8' waiting for santa
+
+'Deer 9' grazing
+ \||//
+
+'Elf 1' work progress is:
+|
+
+'Elf 2' work progress is:
+|||
+
+'Elf 3' work progress is:
+||
+
+'Elf 4' work progress is:
+|
+
+'Elf 5' work progress is:
+||||
+
+'Elf 6' waiting for santa
+
+'Elf 7' work progress is:
+|||
+
+'Elf 8' work progress is:
+|||||||
+
+'Elf 9' waiting for santa
+
+Count of free deers: 4
+Count of free elves: 2
+
+=============================================================================
+
+
+'Deer 1' grazing
+ 
+
+'Deer 2' waiting for santa
+
+'Deer 3' grazing
+ \||/
+
+'Deer 4' grazing
+ /
+
+'Deer 5' grazing
+ \|/
+
+'Deer 6' waiting for santa
+
+'Deer 7' waiting for santa
+
+'Deer 8' waiting for santa
+
+'Deer 9' grazing
+ \||/
+
+'Elf 1' work progress is:
+||
+
+'Elf 2' work progress is:
+||||
+
+'Elf 3' work progress is:
+|||
+
+'Elf 4' work progress is:
+||
+
+'Elf 5' work progress is:
+|||||
+
+'Elf 6' waiting for santa
+
+'Elf 7' work progress is:
+||||
+
+'Elf 8' work progress is:
+||||||||
+
+'Elf 9' waiting for santa
+
+Count of free deers: 4
+Count of free elves: 2
+
+=============================================================================
+
+
+'Deer 1' waiting for santa
+
+'Deer 2' waiting for santa
+
+'Deer 3' grazing
+ |/
+
+'Deer 4' waiting for santa
+
+'Deer 5' grazing
+ /
+
+'Deer 6' waiting for santa
+
+'Deer 7' waiting for santa
+
+'Deer 8' waiting for santa
+
+'Deer 9' grazing
+ |/
+
+'Elf 1' work progress is:
+|||
+
+'Elf 2' work progress is:
+|||||
+
+'Elf 3' work progress is:
+||||
+
+'Elf 4' waiting for santa
+
+'Elf 5' work progress is:
+||||||
+
+'Elf 6' waiting for santa
+
+'Elf 7' work progress is:
+|||||
+
+'Elf 8' work progress is:
+|||||||||
+
+'Elf 9' waiting for santa
+
+Santa is waking up! Time for a meeting.
+
+Count of free deers: 6
+Count of free elves: 3
+
+=============================================================================
+
+
