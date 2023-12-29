@@ -6,20 +6,20 @@
 
 int main()
 {
-	HANDLE new_message_prepared = CreateEvent(NULL, TRUE, TRUE, (LPCWSTR)"NEW_MESSAGE");
+	HANDLE new_message_prepared = CreateEvent(NULL, TRUE, TRUE, reinterpret_cast <LPCWSTR>("NEW_MESSAGE"));
 	HANDLE* events;
 	events = new HANDLE[6];
 	std::string s = "Event_0";
 	for (int i = 0; i < 6; ++i)
 	{
-		events[i] = CreateEvent(NULL, TRUE, FALSE, (LPCWSTR)s.c_str());
-		s[s.size() - 1]++;
+		events[i] = CreateEvent(NULL, TRUE, FALSE, reinterpret_cast<LPCWSTR>(s.c_str()));
+		s[s.size() - 1]++;					//inc last character to create another event
 	}
 	
 	HANDLE semaphore;
 	HANDLE end_semaphore;
-	semaphore = CreateSemaphore(NULL, 3, 3, (LPCWSTR)"Employees activated process");
-	end_semaphore = CreateSemaphore(NULL, -2, 1, (LPCWSTR)"Employees ended event");
+	semaphore = CreateSemaphore(NULL, 3, 3, reinterpret_cast <LPCWSTR>("Employees activated process"));
+	end_semaphore = CreateSemaphore(NULL, -2, 1, reinterpret_cast <LPCWSTR>("Employees ended event"));
 
 	int n, open_count;
 	std::cout << "Enter count of processes Employee: ";
@@ -37,8 +37,8 @@ int main()
 	for (int i = 0; i < n; ++i)
 	{
 		ZeroMemory(&(si[i]), sizeof(STARTUPINFO));
-		if (!CreateProcessA((LPCSTR)lpszAppName, nullptr, nullptr, nullptr, FALSE,
-			CREATE_NEW_CONSOLE, nullptr, nullptr, (LPSTARTUPINFOA)&(si[i]), &(piApp[i])))
+		if (!CreateProcessA(reinterpret_cast <LPCSTR>(lpszAppName), nullptr, nullptr, nullptr, FALSE,		//start process without arguments
+			CREATE_NEW_CONSOLE, nullptr, nullptr, reinterpret_cast <LPSTARTUPINFOA>(&(si[i])), &(piApp[i])))//with using ANSI encoding
 		{
 			_cputs("The new process is not created.\n");
 			_cputs("Check a name of the process.\n");
@@ -49,31 +49,37 @@ int main()
 	}
 
 	std::string EventSequence;
-	std::cout << "Enter message:\n\'0\': Enable event 0\n\'1\': Enable event 1\n\'2\': Enable event 2\n\'3\': Enable event 3\n\'4\': Enable event 4\n\'e\': Close some (3) processes\n";
-	std::cin >> EventSequence;
+	std::cout << "Enter message types (like a string, for example '0123'):\n\'0\': Enable event 0\n\'1\': Enable event 1\n\'2\': Enable event 2\n\'3\': Enable event 3\n\'4\': Enable event 4\n\'e\': Close some (3) processes\n";
+	std::cin >> EventSequence;					//entering of event sequence
 	std::string message;
 	std::ofstream fout;
-	for (int i = 0; i < count_of_messages; ++i)
+	for (int i = 0; i < count_of_messages; ++i)	//and compute each of them
 	{
 		fout.open("Exchanger.txt");
+		std::cout << "Enter message content:\n";
 		std::cin >> message;
 		switch (EventSequence[i])
 		{
 		case '0':
 			fout << "Event 0 send next message: " + message;
 			fout.close();
-			ResetEvent(new_message_prepared);
-			SetEvent(events[0]);
-			WaitForSingleObject(end_semaphore, INFINITE);
-			WaitForSingleObject(end_semaphore, 0);
-			WaitForSingleObject(end_semaphore, 0);
+			ResetEvent(new_message_prepared);				//occupy an event to prevent processes 
+															//that have finished their work from continuing their work
+			
+			SetEvent(events[0]);							//send type of event
+			
+			WaitForSingleObject(end_semaphore, INFINITE);	//when all 3 processes finished
+			WaitForSingleObject(end_semaphore, 0);			//return semaphore to its original state
+			WaitForSingleObject(end_semaphore, 0);			//(counter == -2)
 			ResetEvent(events[0]);
 			break;
 		case '1':
 			fout << "Event 1 send next message: " + message;
 			fout.close();
 			ResetEvent(new_message_prepared);
+			
 			SetEvent(events[1]);
+			
 			WaitForSingleObject(end_semaphore, INFINITE);
 			WaitForSingleObject(end_semaphore, 0);
 			WaitForSingleObject(end_semaphore, 0);
@@ -82,8 +88,11 @@ int main()
 		case '2':
 			fout << "Event 2 send next message: " + message;
 			fout.close();
+			
 			ResetEvent(new_message_prepared);
+			
 			SetEvent(events[2]);
+			
 			WaitForSingleObject(end_semaphore, INFINITE);
 			WaitForSingleObject(end_semaphore, 0);
 			WaitForSingleObject(end_semaphore, 0);
@@ -92,8 +101,11 @@ int main()
 		case '3':
 			fout << "Event 3 send next message: " + message;
 			fout.close();
+			
 			ResetEvent(new_message_prepared);
+			
 			SetEvent(events[3]);
+			
 			WaitForSingleObject(end_semaphore, INFINITE);
 			WaitForSingleObject(end_semaphore, 0);
 			WaitForSingleObject(end_semaphore, 0);
@@ -102,8 +114,11 @@ int main()
 		case '4':
 			fout << "Event 4 send next message: " + message;
 			fout.close();
+			
 			ResetEvent(new_message_prepared);
+			
 			SetEvent(events[4]);
+			
 			WaitForSingleObject(end_semaphore, INFINITE);
 			WaitForSingleObject(end_semaphore, 0);
 			WaitForSingleObject(end_semaphore, 0);
@@ -113,8 +128,11 @@ int main()
 			open_count -= 3;
 			fout << "Exit event send next message: " + message;
 			fout.close();
+			
 			ResetEvent(new_message_prepared);
+			
 			SetEvent(events[5]);
+			
 			WaitForSingleObject(end_semaphore, INFINITE);
 			WaitForSingleObject(end_semaphore, 0);
 			WaitForSingleObject(end_semaphore, 0);
@@ -125,9 +143,13 @@ int main()
 		}
 
 		Sleep(50);
-		SetEvent(new_message_prepared);
+		SetEvent(new_message_prepared);		//then after a short delay we can release the processes
 		if (open_count < 3)
 		{
+			std::cout << "The number of open processes is less than the number of processes required to continue working\n";
+			std::cout << "All processes will be terminated\n";
+			std::cout << "Close all consoles and press any key to finish...\n";
+			_getch();
 			break;
 		}
 	}
@@ -135,7 +157,7 @@ int main()
 	fout.open("Exchanger.txt");
 	fout << "All messages have been forwarded, press any key, to close process...";
 	fout.close();
-	SetEvent(events[5]);
+	SetEvent(events[5]);					//close all processes via existing event mechanism
 	SetEvent(new_message_prepared);
 	for (int i = 0; i < n; ++i)
 	{
