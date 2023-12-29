@@ -141,7 +141,7 @@ void DrawingUI()
 void elf(int param)
 {
 	boost::unique_lock<boost::mutex> lock(elves_mutex[param]);
-	elves_cv.wait(lock, []() { return elf_returned;});
+	elves_cv.wait(lock, []() { return elf_returned; });
 	++all_threads_started;
 	while (true)
 	{
@@ -172,7 +172,7 @@ void elf(int param)
 
 void deer(int param)
 {
-	boost::unique_lock<boost::mutex> lock(deers_mutex[param]); 
+	boost::unique_lock<boost::mutex> lock(deers_mutex[param]);
 	deers_cv.wait(lock, []() {return presents_delivered; });
 	++all_threads_started;
 	while (true)
@@ -311,7 +311,7 @@ int main()
 		DrawingUI();
 		boost::this_thread::sleep_for(boost::chrono::milliseconds(500));
 	}
-	
+
 	loading_loop.join();
 	for (int i = 0; i < 9; ++i)
 	{
