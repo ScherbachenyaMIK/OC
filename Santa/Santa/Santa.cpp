@@ -84,8 +84,8 @@ struct Interface
 
 void DrawingUI()
 {
-	system("cls");
-	for (int i = 0; i < 9; ++i)
+	system("cls");						//refreshing of console
+	for (int i = 0; i < 9; ++i)			//write information about creatures
 	{
 		if (interface.deers_grazing[i])
 		{
@@ -115,7 +115,7 @@ void DrawingUI()
 			fout << "'Elf " << i + 1 << "' waiting for santa\n\n";
 		}
 	}
-	switch (interface.Santa_event)
+	switch (interface.Santa_event)		//write informaion about Santa
 	{
 	case SantaEvents::SantaFallAsleep:
 		std::cout << "Santa falls asleep.\n\n";
@@ -133,14 +133,14 @@ void DrawingUI()
 	default:
 		break;
 	}
-	fout << "Count of free deers: " << deers_num << '\n';
+	fout << "Count of free deers: " << deers_num << '\n';		//some log information
 	fout << "Count of free elves: " << elves_num << '\n';
 	fout << "\n=============================================================================\n\n\n";
 }
 
 void elf(int param)
 {
-	boost::unique_lock<boost::mutex> lock(elves_mutex[param]);
+	boost::unique_lock<boost::mutex> lock(elves_mutex[param]);				//waiting while all creatures will be created
 	elves_cv.wait(lock, []() { return elf_returned; });
 	++all_threads_started;
 	while (true)
@@ -149,17 +149,17 @@ void elf(int param)
 		std::random_device rd;
 		std::mt19937 gen(rd());
 		std::uniform_real_distribution<double> dis(1, 12);
-		int n = dis(gen);
+		int n = dis(gen);													//take random time to work
 		int i = 0;
 		while (i <= n)
 		{
-			interface.elves[param] = i;
+			interface.elves[param] = i;										//then work
 			boost::this_thread::sleep_for(boost::chrono::milliseconds(500));
 			++i;
 		}
 		++elves_num;
 		interface.elves_working[param] = false;
-		elves_cv.wait(lock, []() {
+		elves_cv.wait(lock, []() {											//waiting while Santa release him
 			if (elf_returned)
 			{
 				elf_returned = 0;
@@ -172,7 +172,7 @@ void elf(int param)
 
 void deer(int param)
 {
-	boost::unique_lock<boost::mutex> lock(deers_mutex[param]);
+	boost::unique_lock<boost::mutex> lock(deers_mutex[param]);				//waiting while all creatures will be created
 	deers_cv.wait(lock, []() {return presents_delivered; });
 	++all_threads_started;
 	while (true)
@@ -181,16 +181,16 @@ void deer(int param)
 		std::random_device rd;
 		std::mt19937 gen(rd());
 		std::uniform_real_distribution<double> dis(1, 12);
-		int i = dis(gen);
+		int i = dis(gen);													//take random time to grazing
 		while (i != -1)
 		{
-			interface.deers[param] = i;
+			interface.deers[param] = i;										//then grazing
 			boost::this_thread::sleep_for(boost::chrono::milliseconds(500));
 			i--;
 		}
 		++deers_num;
 		interface.deers_grazing[param] = false;
-		deers_cv.wait(lock, []() {return presents_delivered; });
+		deers_cv.wait(lock, []() {return presents_delivered; });			//waiting while Santa release him
 		++deers_num;
 	}
 }
@@ -201,31 +201,32 @@ void santa()
 	{
 		if (deers_num == 9 || elves_num >= 3)
 		{
-			if (deers_num == 9)
+			if (deers_num == 9)		//give priority to deers
 			{
-				interface.Santa_event = SantaEvents::SantaDeliverPresents;
-				boost::this_thread::sleep_for(boost::chrono::milliseconds(1000));
+				interface.Santa_event = SantaEvents::SantaDeliverPresents;			//transfer Santa to another state
+				boost::this_thread::sleep_for(boost::chrono::milliseconds(1000));	//and simulate work
 				deers_num = 0;
 				presents_delivered = true;
 				boost::chrono::milliseconds(100);
-				deers_cv.notify_all();
+				deers_cv.notify_all();												//release deers
 				while (deers_num != 9);
 				deers_num -= 9;
 				presents_delivered = false;
-				interface.Santa_event = SantaEvents::SantaFallAsleep;
+				interface.Santa_event = SantaEvents::SantaFallAsleep;				//then release Santa
 				continue;
 			}
 			else if (elves_num >= 3)
 			{
+				interface.Santa_event = SantaEvents::SantaHoldsMeeting;				//transfer Santa to another state
+				boost::this_thread::sleep_for(boost::chrono::milliseconds(300));	//and simulate work
 				for (int i = 0; i < 3; ++i)
 				{
-					interface.Santa_event = SantaEvents::SantaHoldsMeeting;
-					boost::this_thread::sleep_for(boost::chrono::milliseconds(300));
+					boost::this_thread::sleep_for(boost::chrono::milliseconds(300));//release elves one by one
 					elf_returned = true;
 					elves_cv.notify_one();
 				}
 				elves_num -= 3;
-				interface.Santa_event = SantaEvents::SantaFallAsleep;
+				interface.Santa_event = SantaEvents::SantaFallAsleep;				//then release Santa
 			}
 		}
 	}
@@ -254,7 +255,7 @@ std::string NextLoadingLoop()
 
 void LoadingLoop()
 {
-	while (!santa_started_work)
+	while (!santa_started_work)				//just draw beautiful animation while loading application
 	{
 		system("cls");
 		std::cout << "Waiting for the creation of all creatures\n\n";
@@ -275,7 +276,7 @@ void LoadingLoop()
 
 int main()
 {
-	std::vector <boost::thread*> elves;
+	std::vector <boost::thread*> elves;		//we need 9 threads for elves, 9 for deers, 1 for santa and one mor for loading
 	elves.reserve(9);
 	std::vector <boost::thread*> deers;
 	deers.reserve(9);
@@ -291,22 +292,22 @@ int main()
 		boost::this_thread::sleep_for(boost::chrono::milliseconds(1000));
 		elves.push_back(new boost::thread(elf, i));
 		deers.push_back(new boost::thread(deer, i));
-		created_creature = i + 1;
+		created_creature = i + 1;						//create all creatures
 	}
 
 	presents_delivered = true;
 	elf_returned = true;
 
-	elves_cv.notify_all();
+	elves_cv.notify_all();								//starting of all threads
 	deers_cv.notify_all();
 
-	while (all_threads_started != 18);
+	while (all_threads_started != 18);					//wait for it
 
 	elf_returned = false;
 	presents_delivered = false;
 
-	santa_started_work = true;
-	while (true)
+	santa_started_work = true;							//starting of work santa
+	while (true)										//drawing ui
 	{
 		DrawingUI();
 		boost::this_thread::sleep_for(boost::chrono::milliseconds(500));
