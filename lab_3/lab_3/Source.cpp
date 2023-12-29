@@ -17,21 +17,21 @@ DWORD WINAPI Work(LPVOID lpParam)
 	std::vector<double> b(n);
 	for (int i = 0; i < n; ++i)
 	{
-		if (abs(((std::vector<double>*)lpParam)->at(i) - x) < 1e-6)	//copy all elements equals to x at
-		{															//beginning of array
-			b[j] = ((std::vector<double>*)lpParam)->at(i);
+		if (abs(reinterpret_cast<std::vector<double>*>(lpParam)->at(i) - x) < 1e-6)	//copy all elements equals to x at
+		{																			//beginning of array
+			b[j] = reinterpret_cast<std::vector<double>*>(lpParam)->at(i);
 			++j;
 		}
 		else														//others at the end
 		{
-			b[k] = ((std::vector<double>*)lpParam)->at(i);
+			b[k] = reinterpret_cast<std::vector<double>*>(lpParam)->at(i);
 			--k;
 		}
 	}
-	swap(*((std::vector<double>*)lpParam), b);
+	swap(*reinterpret_cast<std::vector<double>*>(lpParam), b);
 	for (int i = 0; i < n; ++i)
 	{
-		std::cout << ((std::vector<double>*)lpParam)->at(i) << ' ';
+		std::cout << reinterpret_cast<std::vector<double>*>(lpParam)->at(i) << ' ';
 		Sleep(t * 1000);
 	}
 	std::cout << '\n';
@@ -45,7 +45,7 @@ DWORD WINAPI CountElement(LPVOID lpParam)
 	WaitForSingleObject(hWorkEvent, INFINITE);
 	EnterCriticalSection(&cs2);
 	SetEvent(hCountEnterSectionEvent);
-	if (abs(((std::vector<double>*)lpParam)->at(0) - x) > 1e-6)		//if first element not equals return 0
+	if (abs(reinterpret_cast<std::vector<double>*>(lpParam)->at(0) - x) > 1e-6)		//if first element not equals return 0
 	{
 		result = n;
 		LeaveCriticalSection(&cs2);
@@ -54,7 +54,7 @@ DWORD WINAPI CountElement(LPVOID lpParam)
 	int count = 0;
 	for (int i = 0; i < n; ++i)										//while vector[i] equals to x count	 
 	{																//elements
-		if (abs(((std::vector<double>*)lpParam)->at(i) - x) > 1e-6)
+		if (abs(reinterpret_cast<std::vector<double>*>(lpParam)->at(i) - x) > 1e-6)
 		{
 			break;
 		}
