@@ -10,10 +10,6 @@ struct Array
 
 int main()
 {
-	HANDLE hWriteChannelReady = CreateEvent(NULL, FALSE, FALSE, (LPCWSTR)"WRITE_CHANNEL_READY");
-	HANDLE hReadChannelReady = CreateEvent(NULL, FALSE, FALSE, (LPCWSTR)"READ_CHANNEL_READY");
-	//HANDLE hReadChannelHasBeenRead = CreateEvent(NULL, FALSE, FALSE, (LPCWSTR)"READ_CHANNEL_HAS_BEEN_READ");
-
 	Array arr;
 	std::cout << "Enter array size: ";
 	std::cin >> arr.n;
@@ -24,7 +20,7 @@ int main()
 	HANDLE hWritePipe2, hReadPipe2;
 	SECURITY_ATTRIBUTES sa;
 	sa.nLength = sizeof(SECURITY_ATTRIBUTES);
-	sa.lpSecurityDescriptor = NULL;
+	sa.lpSecurityDescriptor = NULL;				//set inheritance property to pipe
 	sa.bInheritHandle = TRUE;
 
 	if (!CreatePipe(&hReadPipe, &hWritePipe, &sa, 0))
@@ -45,14 +41,14 @@ int main()
 
 	char lpszAppName[] = "Alfavit.exe";
 	char lpszParameter[20];
-	sprintf(lpszParameter, "%d %d", (int)hReadPipe, (int)hWritePipe2);
+	sprintf(lpszParameter, "%d %d", reinterpret_cast<int>(hReadPipe), reinterpret_cast<int>(hWritePipe2));
 
 	STARTUPINFO si;
 	PROCESS_INFORMATION piApp;
 
 	ZeroMemory(&si, sizeof(STARTUPINFO));
-	if (!CreateProcessA((LPCSTR)lpszAppName, lpszParameter, nullptr, nullptr, TRUE,
-		CREATE_NEW_CONSOLE, nullptr, nullptr, (LPSTARTUPINFOA) &si, &piApp))
+	if (!CreateProcessA(reinterpret_cast<LPCSTR>(lpszAppName), lpszParameter, nullptr, nullptr, TRUE, //start process with
+		CREATE_NEW_CONSOLE, nullptr, nullptr, reinterpret_cast<LPSTARTUPINFOA>(&si), &piApp))		  //using ANSI encoding
 	{
 		_cputs("The new process is not created.\n");
 		_cputs("Check a name of the process.\n");
@@ -62,7 +58,8 @@ int main()
 	}
 
 	int dwBytesWritten = 0;
-	if (!WriteFile(hWritePipe, (char*)&arr, sizeof(Array), (LPDWORD)&dwBytesWritten, NULL))
+	if (!WriteFile(hWritePipe, reinterpret_cast<char*>(&arr), sizeof(Array), 
+		reinterpret_cast<LPDWORD>(&dwBytesWritten), NULL))
 	{
 		_cputs("Write to file failed.\n");
 		_cputs("Press any key to finish.\n");
@@ -70,32 +67,26 @@ int main()
 		return GetLastError();
 	}
 
-	SetEvent(hWriteChannelReady);
-
-	WaitForSingleObject(hReadChannelReady, INFINITE);
-
 	Array result;
-	if (!ReadFile(hReadPipe2, &(result.n), sizeof(int), (LPDWORD)&dwBytesWritten, NULL))
+	if (!ReadFile(hReadPipe2, &(result.n), sizeof(int), 
+		reinterpret_cast<LPDWORD>(&dwBytesWritten), NULL))
 	{
 		_cputs("Read from file failed.\n");
 		_cputs("Press any key to finish.\n");
 		_getch();
 		return GetLastError();
 	}
-	
-	SetEvent(hWriteChannelReady);
 
 	for (int i = 0; i <= result.n; ++i)
 	{
-		WaitForSingleObject(hReadChannelReady, INFINITE);
-		if (!ReadFile(hReadPipe2, &(result.arr[i]), sizeof(result.arr[i]), (LPDWORD)&dwBytesWritten, NULL))
+		if (!ReadFile(hReadPipe2, &(result.arr[i]), sizeof(result.arr[i]), 
+			reinterpret_cast<LPDWORD>(&dwBytesWritten), NULL))
 		{
 			_cputs("Read from file failed.\n");
 			_cputs("Press any key to finish.\n");
 			_getch();
 			return GetLastError();
 		}
-		SetEvent(hWriteChannelReady);
 	}
 
 	std::cout << "Letters:\n";
@@ -105,8 +96,6 @@ int main()
 		std::cout << '\'' << result.arr[i] << "\' ";
 	}
 
-	CloseHandle(hWriteChannelReady);
-	CloseHandle(hReadChannelReady);
 	CloseHandle(piApp.hThread);
 	CloseHandle(piApp.hProcess);
 	CloseHandle(hWritePipe);

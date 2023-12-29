@@ -9,27 +9,8 @@ struct Array
 	char arr[51];
 };
 
-int main(int argc, char* argv[])
+void MatchLetters(const Array& arr, Array& result)
 {
-	HANDLE hReadChannelReady = OpenEvent(EVENT_ALL_ACCESS, FALSE, (LPCWSTR)"WRITE_CHANNEL_READY");
-	HANDLE hWriteChannelReady = OpenEvent(EVENT_ALL_ACCESS, FALSE, (LPCWSTR)"READ_CHANNEL_READY");
-	//HANDLE hWriteChannelHasBeenRead = OpenEvent(EVENT_ALL_ACCESS, FALSE, (LPCWSTR)"READ_CHANNEL_HAS_BEEN_READ");
-
-	HANDLE hWritePipe = (HANDLE)atoi(argv[1]), hReadPipe = (HANDLE)atoi(argv[0]);
-	int dwBytesWritten = 0;
-	Array arr;
-
-	WaitForSingleObject(hReadChannelReady, INFINITE);
-
-	if (!ReadFile(hReadPipe, (char*)&arr, sizeof(Array), (LPDWORD)&dwBytesWritten, NULL))
-	{
-		_cputs("Read from file failed.\n");
-		_cputs("Press any key to finish.\n");
-		_getch();
-		return GetLastError();
-	}
-
-	Array result;
 	int count = 0;
 	for (int i = 0; i < arr.n; ++i)
 	{
@@ -40,11 +21,32 @@ int main(int argc, char* argv[])
 	}
 	result.arr[count] = 0;
 	result.n = count;
+}
+
+int main(int argc, char* argv[])
+{
+	HANDLE hWritePipe = reinterpret_cast<HANDLE>(atoi(argv[1])), 
+		hReadPipe = reinterpret_cast<HANDLE>(atoi(argv[0]));			//reading arguments from console
+	int dwBytesWritten = 0;
+	Array arr;
+
+	if (!ReadFile(hReadPipe, (char*)&arr, sizeof(Array), 
+		reinterpret_cast<LPDWORD>(&dwBytesWritten), NULL))
+	{
+		_cputs("Read from file failed.\n");
+		_cputs("Press any key to finish.\n");
+		_getch();
+		return GetLastError();
+	}
+
+	Array result;
+	MatchLetters(arr, result);											//checking for letters
 
 	std::cout << "Original array:\nSize: " << arr.n << "\nArray: " << arr.arr << '\n';
 	std::cout << "New array:\nSize: " << result.n << "\nArray: " << result.arr << '\n';
 
-	if (!WriteFile(hWritePipe, &(result.n), sizeof(int), (LPDWORD)&dwBytesWritten, NULL))
+	if (!WriteFile(hWritePipe, &(result.n), sizeof(int), 
+		reinterpret_cast<LPDWORD>(&dwBytesWritten), NULL))
 	{
 		_cputs("Write to file failed.\n");
 		_cputs("Press any key to finish.\n");
@@ -52,20 +54,16 @@ int main(int argc, char* argv[])
 		return GetLastError();
 	}
 
-	SetEvent(hWriteChannelReady);
-
 	for (int i = 0; i <= result.n; ++i)
 	{
-		WaitForSingleObject(hReadChannelReady, INFINITE);
-		if (!WriteFile(hWritePipe, &(result.arr[i]), sizeof(result.arr[i]), (LPDWORD)&dwBytesWritten, NULL))
+		if (!WriteFile(hWritePipe, &(result.arr[i]), sizeof(result.arr[i]), 
+			reinterpret_cast<LPDWORD>(&dwBytesWritten), NULL))
 		{
 			_cputs("Write to file failed.\n");
 			_cputs("Press any key to finish.\n");
 			_getch();
 			return GetLastError();
 		}
-		SetEvent(hWriteChannelReady);
-		
 	}
 
 	_cputs("Press any key to finish.\n");
