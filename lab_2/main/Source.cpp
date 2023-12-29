@@ -8,8 +8,8 @@ int main()
 	PROCESS_INFORMATION piApp;
 	ZeroMemory(&si, sizeof(STARTUPINFO));
 	si.cb = sizeof(STARTUPINFO);
-	if (!CreateProcessA((LPCSTR)lpszAppName, nullptr, nullptr, nullptr, FALSE,	//in all solutin we use ANSI encoding
-		CREATE_NEW_CONSOLE, nullptr, nullptr, (LPSTARTUPINFOA)&si, &piApp))
+	if (!CreateProcessA(reinterpret_cast<LPCSTR>(lpszAppName), nullptr, nullptr, nullptr, FALSE,	//in all solution we use ANSI encoding
+		CREATE_NEW_CONSOLE, nullptr, nullptr, reinterpret_cast<LPSTARTUPINFOA>(&si), &piApp))		//start the parent process
 	{
 		_cputs("The new process is not created.\n");
 		_cputs("Check a name of the process.\n");
@@ -17,7 +17,7 @@ int main()
 		_getch();
 		return 0;
 	}
-	WaitForSingleObject(piApp.hProcess, INFINITE);
+	WaitForSingleObject(piApp.hProcess, INFINITE);								//and wait while it works
 	CloseHandle(piApp.hThread);
 	CloseHandle(piApp.hProcess);
 	return 0;

@@ -45,8 +45,8 @@ int main()
 	default:
 		break;
 	}
-	if (!CreateProcessA((LPCSTR)lpszAppName, args, nullptr, nullptr, FALSE,		//in this case first argument is size of array
-		CREATE_NEW_CONSOLE, nullptr, nullptr, (LPSTARTUPINFOA)&si, &piApp))
+	if (!CreateProcessA(reinterpret_cast<LPCSTR>(lpszAppName), args, nullptr, nullptr, FALSE,		//in this case first argument is size of array
+		CREATE_NEW_CONSOLE, nullptr, nullptr, reinterpret_cast<LPSTARTUPINFOA>(&si), &piApp))
 	{
 		_cputs("The new process is not created.\n");
 		_cputs("Check a name of the process.\n");
