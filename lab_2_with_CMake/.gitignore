@@ -1,0 +1,8 @@
+#Gooogle test framework libs and sources
+GUnitTest/GoogleTest/
+
+#CMakeFiles
+!CMakeLists.txt
+
+#Building files
+target
