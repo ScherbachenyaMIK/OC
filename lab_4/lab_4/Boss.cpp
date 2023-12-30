@@ -63,6 +63,8 @@ int main()
 		case '0':
 			fout << "Event 0 send next message: " + message;
 			fout.close();
+
+			Sleep(250);										//short delay to save file
 			ResetEvent(new_message_prepared);				//occupy an event to prevent processes 
 															//that have finished their work from continuing their work
 			
@@ -76,6 +78,8 @@ int main()
 		case '1':
 			fout << "Event 1 send next message: " + message;
 			fout.close();
+
+			Sleep(250);
 			ResetEvent(new_message_prepared);
 			
 			SetEvent(events[1]);
@@ -89,6 +93,7 @@ int main()
 			fout << "Event 2 send next message: " + message;
 			fout.close();
 			
+			Sleep(250);
 			ResetEvent(new_message_prepared);
 			
 			SetEvent(events[2]);
@@ -102,6 +107,7 @@ int main()
 			fout << "Event 3 send next message: " + message;
 			fout.close();
 			
+			Sleep(250);
 			ResetEvent(new_message_prepared);
 			
 			SetEvent(events[3]);
@@ -115,6 +121,7 @@ int main()
 			fout << "Event 4 send next message: " + message;
 			fout.close();
 			
+			Sleep(250);
 			ResetEvent(new_message_prepared);
 			
 			SetEvent(events[4]);
@@ -129,6 +136,7 @@ int main()
 			fout << "Exit event send next message: " + message;
 			fout.close();
 			
+			Sleep(250);
 			ResetEvent(new_message_prepared);
 			
 			SetEvent(events[5]);
@@ -139,11 +147,13 @@ int main()
 			ResetEvent(events[5]);
 			break;
 		default:
+			std::cout << "Invalid input message was ignored\n";
+			fout.close();
 			break;
 		}
 
-		Sleep(50);
-		SetEvent(new_message_prepared);		//then after a short delay we can release the processes
+		Sleep(250);
+		SetEvent(new_message_prepared);		//then after small delay we can release the processes
 		if (open_count < 3)
 		{
 			std::cout << "The number of open processes is less than the number of processes required to continue working\n";

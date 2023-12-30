@@ -73,7 +73,7 @@ int main()
 			q = 1;
 			fin.close();
 			ReleaseSemaphore(semaphore, 1, NULL);									//also release semaphore so that
-			_getch();																//other processes can start working
+			std::cin.get();															//other processes can start working
 			ReleaseSemaphore(end_semaphore, 1, NULL);
 			return 0;
 			break;
@@ -81,7 +81,7 @@ int main()
 			break;
 		}
 	}
-	_getch();
+	std::cin.get();
 	ReleaseSemaphore(semaphore, 1, NULL);											//if the messages are over
 	return 0;
 }
